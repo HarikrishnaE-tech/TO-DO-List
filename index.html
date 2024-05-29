@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jq folder/code.jquery.com_jquery-3.7.1.js"></script>
+    <link href="./list.css" rel='stylesheet'>
+</head>
+<body>
+    <div class="box">
+        <h1>TO DO LIST</h1>
+        <input type="text" id="inp">
+        <button id="add">ADD</button>
+    </div>
+    <div id="box2">
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#add').click(()=>{
+            var txt=$('#inp').val();
+            var d1=$('<div>').attr('id','box3').addClass('tbx').text(txt)
+                if(txt==''){
+                  d1.text('ERROR')
+                }  
+            var deletebt=$('<span>').addClass('btt').text('X')
+                deletebt.click(()=>{
+                    d1.remove();
+                })
+                d1.append(deletebt);
+                 $('#box2').append(d1)
+                 $('#inp').val('');
+
+            })
+        })
+
+    
+
+    
+
+
+
+
+    </script>
+</body>
+</html>

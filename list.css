@@ -1,0 +1,56 @@
+.box{
+    
+    align-items: center;
+    width: 1000px;
+    height: 250px;
+    border:1px solid white;
+    background-color: aquamarine;
+    margin-left: 250px;
+    margin-top: 50px;
+
+}
+.box h1{
+position: absolute;
+color: wheat;
+margin-bottom: 200px;
+margin-left: 350px;
+
+}
+#inp{
+    position:relative;
+    margin-left: 150px;
+    font-size: 20px;
+    margin-top: 100px;
+    width:600px;
+    height: 50px;
+}
+#add{
+    position: absolute;
+    margin-top:100px;
+    margin-left: 100px;
+    height: 60px;
+    width: 60px;
+    box-shadow:10ch;
+    border-radius: 5px;
+    background-color: chocolate;
+}
+.tbx{
+    position: relative;
+    align-items: center;
+    margin-left: 260px;
+    width: 1000px;
+    height: 80px;
+    border: 1px solid white;
+    background-color: coral;
+    
+}
+.btt{
+    position: fixed;
+    left:1230px;
+    
+    font-size: xx-large;
+    cursor: pointer;
+    color: red;
+    border: 1px solid black
+
+}
